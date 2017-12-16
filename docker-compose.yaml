@@ -1,0 +1,10 @@
+# to use this compose, you need run the "npm install" and "bower install" locally before run this
+version: '2'
+services:
+  server:
+    container_name: lista-de-compras-react-prod
+    build: ./
+    ports:
+      - 3000
+
+

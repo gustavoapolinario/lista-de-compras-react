@@ -1,0 +1,12 @@
+FROM node:latest
+
+MAINTAINER Gustavo Apolinario <gustavo.guss@gmail.com>
+
+RUN apt-get update && apt-get install vim -y && apt-get install curl -y && apt-get clean
+
+#RUN npm init -y
+WORKDIR /app
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]
